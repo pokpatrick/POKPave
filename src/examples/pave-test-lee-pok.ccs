@@ -1,0 +1,23 @@
+const %A = 10;
+
+type T = [1..12];
+type VOLUME = {bas, moyen, haut};
+
+def a = when (true) test?;
+def b = when (false) test?;
+def c = when (not true or 3 >= 3) test?;
+def d = when (if %A = %A then true and true else false or false) test?;
+def e = when (true) c!(3);
+def f = in?($m:VOLUME), test!;
+
+const %N = 3;
+type Range = [0..%N];
+def Incr = in?($n:Range), [when ($n<%N) out!($n+1), Incr + when ($n=%N) stop!, 0];
+
+type Ra = [3..5];
+def test = in?($t:Ra), when ($t<%N) fail!;
+
+const %MIN = 0;
+const %MAX = 2;
+type Range = [%MIN..%MAX];
+def Compteur($n:Range) = when ($n>%MIN) decr?, Compteur($n-1) + when ($n<%MAX) incr?, Compteur($n+1);

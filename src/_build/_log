@@ -1,0 +1,79 @@
+### Starting build.
+# Target: Pave.ml.depends, tags: { extension:ml, file:Pave.ml, ocaml, ocamldep, quiet }
+/usr/local/bin/ocamldep.opt -modules Pave.ml > Pave.ml.depends
+# Target: Control.ml.depends, tags: { extension:ml, file:Control.ml, ocaml, ocamldep, quiet }
+/usr/local/bin/ocamldep.opt -modules Control.ml > Control.ml.depends # cached
+# Target: Minim.ml.depends, tags: { extension:ml, file:Minim.ml, ocaml, ocamldep, quiet }
+/usr/local/bin/ocamldep.opt -modules Minim.ml > Minim.ml.depends # cached
+# Target: Normalize.ml.depends, tags: { extension:ml, file:Normalize.ml, ocaml, ocamldep, quiet }
+/usr/local/bin/ocamldep.opt -modules Normalize.ml > Normalize.ml.depends # cached
+# Target: Syntax.ml.depends, tags: { extension:ml, file:Syntax.ml, ocaml, ocamldep, quiet }
+/usr/local/bin/ocamldep.opt -modules Syntax.ml > Syntax.ml.depends # cached
+# Target: Utils.ml.depends, tags: { extension:ml, file:Utils.ml, ocaml, ocamldep, quiet }
+/usr/local/bin/ocamldep.opt -modules Utils.ml > Utils.ml.depends # cached
+# Target: Utils.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Utils.cmo, file:Utils.ml, implem, ocaml, quiet }
+/usr/local/bin/ocamlc.opt -c -w Ae -warn-error A -o Utils.cmo Utils.ml # cached
+# Target: Syntax.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Syntax.cmo, file:Syntax.ml, implem, ocaml, quiet }
+/usr/local/bin/ocamlc.opt -c -w Ae -warn-error A -o Syntax.cmo Syntax.ml # cached
+# Target: Normalize.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Normalize.cmo, file:Normalize.ml, implem, ocaml, quiet }
+/usr/local/bin/ocamlc.opt -c -w Ae -warn-error A -o Normalize.cmo Normalize.ml # cached
+# Target: Semop.ml.depends, tags: { extension:ml, file:Semop.ml, ocaml, ocamldep, quiet }
+/usr/local/bin/ocamldep.opt -modules Semop.ml > Semop.ml.depends # cached
+# Target: Semop.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Semop.cmo, file:Semop.ml, implem, ocaml, quiet }
+/usr/local/bin/ocamlc.opt -c -w Ae -warn-error A -o Semop.cmo Semop.ml # cached
+# Target: Minim.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Minim.cmo, file:Minim.ml, implem, ocaml, quiet }
+/usr/local/bin/ocamlc.opt -c -w Ae -warn-error A -o Minim.cmo Minim.ml # cached
+# Target: Presyntax.ml.depends, tags: { extension:ml, file:Presyntax.ml, ocaml, ocamldep, quiet }
+/usr/local/bin/ocamldep.opt -modules Presyntax.ml > Presyntax.ml.depends # cached
+# Target: Presyntax.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Presyntax.cmo, file:Presyntax.ml, implem, ocaml, quiet }
+/usr/local/bin/ocamlc.opt -c -w Ae -warn-error A -o Presyntax.cmo Presyntax.ml # cached
+# Target: WSemop.ml.depends, tags: { extension:ml, file:WSemop.ml, ocaml, ocamldep, quiet }
+/usr/local/bin/ocamldep.opt -modules WSemop.ml > WSemop.ml.depends # cached
+# Target: WSemop.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:WSemop.cmo, file:WSemop.ml, implem, ocaml, quiet }
+/usr/local/bin/ocamlc.opt -c -w Ae -warn-error A -o WSemop.cmo WSemop.ml # cached
+# Target: Control.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Control.cmo, file:Control.ml, implem, ocaml, quiet }
+/usr/local/bin/ocamlc.opt -c -w Ae -warn-error A -o Control.cmo Control.ml # cached
+# Target: Lexer.mll, tags: { extension:mll, file:Lexer.mll, lexer, ocaml, ocamllex, quiet }
+/usr/local/bin/ocamllex.opt -q Lexer.mll
+# Target: Lexer.ml.depends, tags: { extension:ml, file:Lexer.ml, ocaml, ocamldep, quiet }
+/usr/local/bin/ocamldep.opt -modules Lexer.ml > Lexer.ml.depends
+# Target: Parser.mly, tags: { extension:mly, file:Parser.mly, ocaml, ocamlyacc, parser, quiet }
+/usr/local/bin/ocamlyacc Parser.mly
++ /usr/local/bin/ocamlyacc Parser.mly
+2 rules never reduced
+57 shift/reduce conflicts, 13 reduce/reduce conflicts.
+# Target: Parser.mli.depends, tags: { extension:mli, file:Parser.mli, ocaml, ocamldep, quiet }
+/usr/local/bin/ocamldep.opt -modules Parser.mli > Parser.mli.depends
+# Target: Parser.cmi, tags: { byte, compile, extension:mli, file:Parser.mli, interf, ocaml, quiet }
+/usr/local/bin/ocamlc.opt -c -w Ae -warn-error A -o Parser.cmi Parser.mli
+# Target: Lexer.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Lexer.cmo, file:Lexer.ml, implem, ocaml, quiet }
+/usr/local/bin/ocamlc.opt -c -w Ae -warn-error A -o Lexer.cmo Lexer.ml
+# Target: Pave.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:Pave.cmo, file:Pave.ml, implem, ocaml, quiet }
+/usr/local/bin/ocamlc.opt -c -w Ae -warn-error A -o Pave.cmo Pave.ml
+# Target: Utils.cmx, tags: { compile, extension:cmx, extension:ml, file:Utils.cmx, file:Utils.ml, implem, native, ocaml, quiet }
+/usr/local/bin/ocamlopt.opt -c -w Ae -warn-error A -o Utils.cmx Utils.ml # cached
+# Target: Syntax.cmx, tags: { compile, extension:cmx, extension:ml, file:Syntax.cmx, file:Syntax.ml, implem, native, ocaml, quiet }
+/usr/local/bin/ocamlopt.opt -c -w Ae -warn-error A -o Syntax.cmx Syntax.ml # cached
+# Target: Normalize.cmx, tags: { compile, extension:cmx, extension:ml, file:Normalize.cmx, file:Normalize.ml, implem, native, ocaml, quiet }
+/usr/local/bin/ocamlopt.opt -c -w Ae -warn-error A -o Normalize.cmx Normalize.ml # cached
+# Target: Semop.cmx, tags: { compile, extension:cmx, extension:ml, file:Semop.cmx, file:Semop.ml, implem, native, ocaml, quiet }
+/usr/local/bin/ocamlopt.opt -c -w Ae -warn-error A -o Semop.cmx Semop.ml # cached
+# Target: Minim.cmx, tags: { compile, extension:cmx, extension:ml, file:Minim.cmx, file:Minim.ml, implem, native, ocaml, quiet }
+/usr/local/bin/ocamlopt.opt -c -w Ae -warn-error A -o Minim.cmx Minim.ml # cached
+# Target: Presyntax.cmx, tags: { compile, extension:cmx, extension:ml, file:Presyntax.cmx, file:Presyntax.ml, implem, native, ocaml, quiet }
+/usr/local/bin/ocamlopt.opt -c -w Ae -warn-error A -o Presyntax.cmx Presyntax.ml # cached
+# Target: WSemop.cmx, tags: { compile, extension:cmx, extension:ml, file:WSemop.cmx, file:WSemop.ml, implem, native, ocaml, quiet }
+/usr/local/bin/ocamlopt.opt -c -w Ae -warn-error A -o WSemop.cmx WSemop.ml # cached
+# Target: Control.cmx, tags: { compile, extension:cmx, extension:ml, file:Control.cmx, file:Control.ml, implem, native, ocaml, quiet }
+/usr/local/bin/ocamlopt.opt -c -w Ae -warn-error A -o Control.cmx Control.ml # cached
+# Target: Parser.ml.depends, tags: { extension:ml, file:Parser.ml, ocaml, ocamldep, quiet }
+/usr/local/bin/ocamldep.opt -modules Parser.ml > Parser.ml.depends
+# Target: Parser.cmx, tags: { compile, extension:cmx, extension:ml, file:Parser.cmx, file:Parser.ml, implem, native, ocaml, quiet }
+/usr/local/bin/ocamlopt.opt -c -w Ae -warn-error A -o Parser.cmx Parser.ml
+# Target: Lexer.cmx, tags: { compile, extension:cmx, extension:ml, file:Lexer.cmx, file:Lexer.ml, implem, native, ocaml, quiet }
+/usr/local/bin/ocamlopt.opt -c -w Ae -warn-error A -o Lexer.cmx Lexer.ml
+# Target: Pave.cmx, tags: { compile, extension:cmx, extension:ml, file:Pave.cmx, file:Pave.ml, implem, native, ocaml, quiet }
+/usr/local/bin/ocamlopt.opt -c -w Ae -warn-error A -o Pave.cmx Pave.ml
+# Target: Pave.native, tags: { dont_link_with, extension:native, file:Pave.native, link, native, ocaml, program, quiet }
+/usr/local/bin/ocamlopt.opt Utils.cmx Syntax.cmx Normalize.cmx Semop.cmx Minim.cmx Presyntax.cmx WSemop.cmx Control.cmx Parser.cmx Lexer.cmx Pave.cmx -o Pave.native
+# Compilation successful.

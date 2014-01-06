@@ -1,0 +1,6 @@
+# example showing that renaming is a semantic operator
+
+def B = b!,0 ;
+
+lts  (c!,b!,B()) [a/b] ;
+
